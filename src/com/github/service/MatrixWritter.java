@@ -70,13 +70,13 @@ public class MatrixWritter {
 	    	//move L-R 
 	    	i=topLevel;
 	    	j=leftLevel;
-	    	for(;j <= 4-rightLevel ;j++){
+	    	for(;j <= (matrix.length-1)-rightLevel ;j++){
 	    		System.out.println(matrix[i][j]);
 	    		count ++;
 	    	}
 	    	topLevel++;
 	    	//move T-B
-	    	for(i=topLevel;i<=4-bottumLevel;i++){
+	    	for(i=topLevel;i<=(matrix.length-1)-bottumLevel;i++){
 	    		System.out.println(matrix[i][j-1]);
 	    		count ++;
 	    	}
